@@ -21,6 +21,7 @@ class BookSearch extends React.Component {
                     books = []
                 }
                 
+                //Remove books without images & authors
                 this.setState(() => ({
                     books: books.filter((book) => {
                         return book.imageLinks !== undefined && book.authors !== undefined})
